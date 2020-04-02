@@ -1,2 +1,2 @@
-# Alocacao
+# Allocation
 Alocação dinâmica com C
