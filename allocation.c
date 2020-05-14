@@ -14,13 +14,13 @@ int main(void)
 
     if(p == NULL)
     {
-        printf("\nErro de alocação de memória!!!");
+        printf("\nErro de alocaÃ§Ã£o de memÃ³ria!!!");
         exit(1);
     }
 
     for(k=0; k<i; k++)
     {
-        printf("Digite o número para o indice %d: ", k);
+        printf("Digite o nÃºmero para o indice %d: ", k);
         scanf("%d", &p[k]);
 
         if(p[k]>0)
@@ -31,13 +31,13 @@ int main(void)
 
             if(p == NULL)
             {
-                printf("\nErro de re-alocação de memória!!!");
+                printf("\nErro de re-alocaÃ§Ã£o de memÃ³ria!!!");
                 exit(1);
             }
         }
         else if(p[k]<=0)
         {
-            printf("\nImpossível alocar números negativos!!!");
+            printf("\nImpossÃ­vel alocar nÃºmeros negativos!!!");
 
             i -= 1;
             break;
@@ -48,7 +48,7 @@ int main(void)
 
     for(k=0; k<i; k++)
     {
-        printf("O número do indice %d é %d\n", k, p[k]);
+        printf("O nÃºmero do indice %d Ã© %d\n", k, p[k]);
     }
 
     free(p);
